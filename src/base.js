@@ -3,10 +3,15 @@
 import Vue from 'vue'
 import GlsxVueComponents from 'glsx-vue-components'
 import 'glsx-vue-components/dist/glsx-vue-components.css'
+import './styles/index.scss'
+import './styles/common.scss'
+import './date.js'
+import VueClipboard2 from 'vue-clipboard2'
 // import _ from 'lodash'
 // import axios from 'axios'
 
 Vue.use(GlsxVueComponents)
+Vue.use(VueClipboard2)
 
 var mixin = {
   mounted() {
